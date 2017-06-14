@@ -16,15 +16,15 @@ const API = {
 
   // Retrieves all articles from the db
   getArticles() {
-    return axios.get("/api/saved").then(function(response){
-      return response.data
+    return axios.get("/api/saved").then(function(res){
+      return res.data;
     })
   }
   // Saves a new article to the db
   postArticle(artObj) {
     return axios.post("/api", { title: artObj.headline.main, url: artObj.web_url, date: artObj.date });
   }
-  // Deletes a article from the db
+  // Deletes an article from the db
   deleteArticle(id) {
     return axios.delete("/api/saved/" + id);
   }

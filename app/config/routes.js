@@ -12,21 +12,22 @@ import { Route, IndexRoute, Router, browserHistory } from "react-router";
 
 import Main from "../components/Main";
 //saved articles
-import Saved from "../components/Saved";
+import ASaved from "../components/ASaved";
 
-import Search from "../components/Search"
+import ASearch from "../components/ASearch";
 
 import Home from "../components/Home";
 
 
-const routes = (
+export default = (
   <Router history={browserHistory}>
     <Route path="/" component={Main}>
-    <Route path= "search" component={Search} />
-    <Route path="saved" component={Saved} />
-    <IndexRoute component={Search} />
+
+    <Route path= "search" component={ASearch} />
+    <Route path="saved" component={ASaved} />
+    <IndexRoute component={ASearch} />
+
     </Route>
   </Router>
 );
 
-export default routes;

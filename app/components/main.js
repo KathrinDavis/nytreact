@@ -3,8 +3,12 @@ import React from "react";
 var Link = require("react-router").Link
 import Navbar from "./common/Navbar";
 import Footer from "./common/Footer";
-import ArticleForm from "./common/ArticleForm";
-import Pannel from "./common/Pannel";
+import ASaved from "./ASaved";
+import ASearch from "./ASearch";
+import SaveBox from "./common/SaveBox";
+import SearchBox from "./common/SearchBox";
+//import ArticleForm from "./common/ArticleForm";
+//import Pannel from "./common/Pannel";
 
 
 class Main extends React.Component {

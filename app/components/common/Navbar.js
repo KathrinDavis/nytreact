@@ -12,10 +12,10 @@ const Navbar = () => (
           <Link to="/">Home</Link>
         </li>
         <li className={location.pathname === "/Search" && "active"}>
-          <Link to="/Search">Search</Link>
+          <Link to="/ASearch">Search</Link>
         </li>
         <li className={location.pathname === "/Saved" && "active"}>
-          <Link to="/Saved">Saved</Link>
+          <Link to="/ASaved">Saved</Link>
         </li>
       </ul>
     </div>
